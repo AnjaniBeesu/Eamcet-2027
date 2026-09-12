@@ -3,7 +3,6 @@
 import { useMemo, useState } from "react";
 import type { CutoffCourseRow } from "@/app/cutoffs/page";
 
-const branches = ["ALL", "CSE", "ECE", "EEE", "INF", "CSM", "CSD", "CSC"];
 const cutoffColumns = [
   "OC Boys", "OC Girls", "EWS Boys", "EWS Girls",
   "BC-A Boys", "BC-A Girls", "BC-B Boys", "BC-B Girls",
@@ -13,11 +12,18 @@ const cutoffColumns = [
   "ST Boys", "ST Girls",
 ];
 
-export default function CutoffTable({ initialRows, source }: { initialRows: CutoffCourseRow[]; source: string }) {
+export default function CutoffTable({ initialRows }: { initialRows: CutoffCourseRow[] }) {
   const [branch, setBranch] = useState("ALL");
   const [q, setQ] = useState("");
+
+  const branches = useMemo(() => [
+    "ALL",
+    ...Array.from(new Set(initialRows.map((row) => row.branch))).sort(),
+  ], [initialRows]);
+
   const rows = useMemo(() => initialRows.filter((row) =>
-    (branch === "ALL" || row.branch === branch) && `${row.name} ${row.code} ${row.branch}`.toLowerCase().includes(q.toLowerCase())
+    (branch === "ALL" || row.branch === branch) &&
+    `${row.name} ${row.code} ${row.branch} ${row.branchName}`.toLowerCase().includes(q.toLowerCase())
   ), [initialRows, branch, q]);
 
   const collegeCount = new Set(initialRows.map((row) => row.code)).size;
@@ -28,10 +34,13 @@ export default function CutoffTable({ initialRows, source }: { initialRows: Cuto
         <div className="mx-auto max-w-7xl px-5 py-16 lg:px-8">
           <p className="text-xs font-bold uppercase tracking-[.2em] text-[#f4c542]">Cutoffs / Phase 1</p>
           <h1 className="mt-3 text-4xl font-black sm:text-6xl">2026 closing ranks.</h1>
-          <p className="mt-4 max-w-4xl text-zinc-500">All 2026 participating engineering colleges and the courses listed for them. Rank cells are intentionally blank until the verified Phase 1 closing-rank dataset is added.</p>
           <div className="mt-5 text-xs font-bold uppercase tracking-wider text-zinc-600">{collegeCount} colleges · {initialRows.length} college-course rows</div>
-          <div className="mt-8 flex flex-wrap gap-2">
-            {branches.map((item) => <button key={item} onClick={() => setBranch(item)} className={`rounded-full px-4 py-2 text-xs font-black ${branch === item ? "bg-[#f4c542] text-black" : "border border-white/10 text-zinc-500 hover:text-white"}`}>{item}</button>)}
+          <div className="mt-8 flex max-w-full gap-2 overflow-x-auto pb-2">
+            {branches.map((item) => (
+              <button key={item} onClick={() => setBranch(item)} className={`shrink-0 rounded-full px-4 py-2 text-xs font-black ${branch === item ? "bg-[#f4c542] text-black" : "border border-white/10 text-zinc-500 hover:text-white"}`}>
+                {item}
+              </button>
+            ))}
           </div>
           <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search college, code or branch" className="mt-4 w-full rounded-2xl border border-white/10 bg-black px-4 py-3 text-sm outline-none focus:border-[#f4c542]" />
         </div>
@@ -55,7 +64,6 @@ export default function CutoffTable({ initialRows, source }: { initialRows: Cuto
           </table>
           {rows.length === 0 && <p className="p-10 text-center text-zinc-500">Course directory could not be loaded. Refresh once the source is available.</p>}
         </div>
-        <p className="mt-4 text-xs text-zinc-700">Course directory source: {source}. Closing ranks will be populated separately from the verified 2026 Phase 1 allotment data.</p>
       </section>
     </main>
   );
