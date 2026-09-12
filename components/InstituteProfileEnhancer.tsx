@@ -21,7 +21,7 @@ export default function InstituteProfileEnhancer() {
         el.title = "Click to view institute profile";
         el.addEventListener("click", (event) => {
           if ((event.target as HTMLElement).closest("a")) return;
-          window.location.href = `/institute-profile/${encodeURIComponent(code)}`;
+          window.location.href = `/institute-profile/details?code=${encodeURIComponent(code)}`;
         });
       });
 
