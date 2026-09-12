@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 
+type InstituteRow = [number, string, string, string, string, string, string, string];
 type Institute = {
   no: number;
   code: string;
@@ -192,7 +193,7 @@ const institutes: Institute[] = [
   [176,"VRKW","DR VRK WOMENS COLL OF ENGG AND TECHNOLOGY (AUTONOMOUS)","MOINABAD","RR","PVT","MUS","GIRLS"],
   [177,"WESL","CSI WESLEY INST OF TECHNOLOGY AND SCIENCES","SECUNDERABAD","HYD","PVT","CHR","COED"],
   [178,"WITS","WARANGAL INST OF TECHNOLOGY SCIENCE","WARANGAL","HNK","PVT","NA","COED"],
-].map(([no,code,name,place,region,type,minority,mode]) => ({no,code,name,place,region,type,minority,mode}));
+].map(([no,code,name,place,region,type,minority,mode]: InstituteRow) => ({no,code,name,place,region,type,minority,mode}));
 
 export default function InstitutesPage() {
   const [query, setQuery] = useState("");
