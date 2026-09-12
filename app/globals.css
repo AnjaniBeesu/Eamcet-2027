@@ -16,5 +16,10 @@
 
 /* Borders and subtle surfaces */
 .light-theme .border-white\/10{border-color:rgba(107,69,40,.18)!important}.light-theme .border-white\/8{border-color:rgba(107,69,40,.16)!important}.light-theme .border-white\/6{border-color:rgba(107,69,40,.13)!important}.light-theme .border-zinc-800{border-color:#d8c9ad!important}.light-theme .border-zinc-700{border-color:#d8c9ad!important}
-.light-theme .bg-white\/5{background-color:rgba(107,69,40,.07)!important}.light-theme .bg-white\/10{background-color:rgba(107,69,40,.09)!important}.light-theme .bg-white\/\[\.03\]{background-color:#f1e6d0!important}.light-theme .bg-white\/\[\.02\]{background-color:#fffaf0!important}.light-theme .bg-white\/\[\.02\]:hover{background-color:#f3eadb!important}
-.light-theme .theme-toggle{color:#6b4528!important;border-color:rgba(107,69,40,.2)!important}.light-theme .border-\[\#f4c542\]\/15{border-color:rgba(107,69,40,.18)!important}.light-theme .bg-\[\#f4c542\]\/\[\.04\]{background-color:rgba(107,69,40,.055)!important}.light-theme .placeholder\:text-zinc-600::placeholder{color:#8a7a68!important}
+.light-theme .bg-white\/5{background-color:rgba(107,69,40,.07)!important}.light-theme .bg-white\/10{background-color:rgba(107,69,40,.09)!important}.light-theme .bg-white\/\[\.03\]{background-color:#f1e6d0!important}.light-theme .bg-white\/\[\.02\]{background-color:#fffaf0!important}.light-theme .bg-white\/\[\.02\]:hover{background-color:#fffaf0!important}
+.light-theme .theme-toggle{color:#6b4528!important;border-color:rgba(107,69,40,.2)!important}.light-theme .border-\[\#f4c542\]\/15{border-color:rgba(107,69,40,.18)!important}.light-theme .bg-\[\#f4c542\]\/\[\.04\]{background-color:transparent!important}.light-theme .placeholder\:text-zinc-600::placeholder{color:#8a7a68!important}
+
+/* Institute Profile: rows stay white on hover; girls-only colleges get a soft baby-pink row. */
+.light-theme .bg-\[\#f4c542\]\/\[\.04\]:hover{background-color:#fffaf0!important}
+.light-theme tr:has(.text-pink-300){background-color:#fff0f5!important}
+.light-theme tr:has(.text-pink-300):hover{background-color:#ffe6ee!important}
