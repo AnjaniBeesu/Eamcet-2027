@@ -18,9 +18,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr_1fr]">
               <div>
                 <div className="flex items-center gap-3">
-                  <img src="https://eamcet-website.vercel.app/favicon.svg" alt="TS EAMCET Logo" className="h-9 w-9" />
+                  <div className="grid h-10 w-10 place-items-center rounded-xl bg-[#f4c542] text-sm font-black text-black shadow-[0_0_24px_rgba(244,197,66,.12)]">
+                    TS
+                  </div>
                   <div>
-                    <p className="font-black tracking-tight">TS EAMCET 2025</p>
+                    <p className="font-black tracking-tight">TS EAMCET 2027</p>
                     <p className="text-xs text-zinc-600">College &amp; Results Finder</p>
                   </div>
                 </div>
