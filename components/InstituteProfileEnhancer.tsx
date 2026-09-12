@@ -4,13 +4,42 @@ import { useEffect } from "react";
 
 export default function InstituteProfileEnhancer() {
   useEffect(() => {
+    const addGirlsRowStyles = () => {
+      if (document.querySelector("[data-institute-girls-row-styles]")) return;
+
+      const style = document.createElement("style");
+      style.dataset.instituteGirlsRowStyles = "true";
+      style.textContent = `
+        html:not(.light-theme) main table tbody tr[data-girls-college="true"] {
+          background-color: rgba(255, 182, 193, 0.10) !important;
+        }
+        html:not(.light-theme) main table tbody tr[data-girls-college="true"]:hover {
+          background-color: rgba(255, 182, 193, 0.16) !important;
+        }
+        html.light-theme main table tbody tr[data-girls-college="true"] {
+          background-color: #fff0f5 !important;
+        }
+        html.light-theme main table tbody tr[data-girls-college="true"]:hover {
+          background-color: #ffe6ee !important;
+        }
+      `;
+      document.head.appendChild(style);
+    };
+
     const setup = () => {
+      addGirlsRowStyles();
+
       const table = document.querySelector("main table");
       if (!table) return false;
 
       const rows = table.querySelectorAll("tbody tr");
       rows.forEach((row) => {
         const el = row as HTMLElement;
+        const isGirlsCollege = row.textContent?.includes("GIRLS") ?? false;
+        if (isGirlsCollege) {
+          el.dataset.girlsCollege = "true";
+        }
+
         if (el.dataset.profileEnhanced === "true") return;
         const codeLink = row.querySelector<HTMLAnchorElement>("a[href*='iCode=']");
         const code = codeLink?.href.match(/iCode=([^&]+)/)?.[1];
