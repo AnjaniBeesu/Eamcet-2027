@@ -14,7 +14,7 @@ type Institute = {
   mode: string;
 };
 
-const institutes: Institute[] = [
+const institutes: Institute[] = ([
   [1,"AARM","AAR MAHAVEER ENGINEERING COLLEGE","BANDLAGUDA","HYD","PVT","NA","COED"],
   [2,"ACEG","A C E ENGINEERING COLLEGE (AUTONOMOUS)","GHATKESAR","MDL","PVT","NA","COED"],
   [3,"AITH","ANNAMACHARYA INST OF TECHNOLOGY AND SCI (AUTONOMOUS)","HAYATHNAGAR","RR","PVT","NA","COED"],
@@ -193,7 +193,7 @@ const institutes: Institute[] = [
   [176,"VRKW","DR VRK WOMENS COLL OF ENGG AND TECHNOLOGY (AUTONOMOUS)","MOINABAD","RR","PVT","MUS","GIRLS"],
   [177,"WESL","CSI WESLEY INST OF TECHNOLOGY AND SCIENCES","SECUNDERABAD","HYD","PVT","CHR","COED"],
   [178,"WITS","WARANGAL INST OF TECHNOLOGY SCIENCE","WARANGAL","HNK","PVT","NA","COED"],
-].map(([no,code,name,place,region,type,minority,mode]: InstituteRow) => ({no,code,name,place,region,type,minority,mode}));
+] as InstituteRow[]).map(([no,code,name,place,region,type,minority,mode]) => ({no,code,name,place,region,type,minority,mode}));
 
 export default function InstitutesPage() {
   const [query, setQuery] = useState("");
