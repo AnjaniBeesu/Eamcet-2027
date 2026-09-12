@@ -34,11 +34,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               <div>
                 <p className="text-xs font-black uppercase tracking-[.2em] text-[#f4c542]">📞 Contact Us</p>
                 <p className="mt-4 text-sm leading-6 text-zinc-500">
-                  For information, mistakes, copyright issues, or feedback, please contact us on Reddit.
+                  For information, mistakes, copyright issues, or feedback, please contact us directly.
                 </p>
-                <a href="https://www.reddit.com/u/Ok-Delivery-7437" target="_blank" rel="noreferrer" className="mt-3 inline-block font-bold text-white transition hover:text-[#f4c542]">
-                  u/Ok-Delivery-7437
-                </a>
+                <div className="mt-4 flex flex-col gap-2 text-sm font-bold">
+                  <a href="mailto:anjanibeesu@gmail.com" className="text-white transition hover:text-[#f4c542]">anjanibeesu@gmail.com</a>
+                  <a href="https://www.linkedin.com/in/anjanibeesu/" target="_blank" rel="noreferrer" className="text-white transition hover:text-[#f4c542]">LinkedIn ↗</a>
+                </div>
               </div>
 
               <div>
