@@ -1,0 +1,60 @@
+export type PlacementRanking = {
+  rank: number;
+  code: string;
+  name: string;
+  highest: string;
+  average: string;
+};
+
+export const placementRanking: PlacementRanking[] = [
+  { rank: 1, code: "CMRK", name: "C M R College of Engg and Technology, Kandlakoya", highest: "₹58.0 LPA", average: "₹5.60 LPA" },
+  { rank: 2, code: "CBIT", name: "Chaitanya Bharathi Institute of Tech, Gandipet", highest: "₹54.0 LPA", average: "₹6.30 LPA" },
+  { rank: 3, code: "ANUG", name: "Anurag University, Ghatkesar", highest: "₹53.0 LPA", average: "₹6.50 LPA" },
+  { rank: 4, code: "CVRH", name: "CVR College of Engineering, Ibrahimpatnam", highest: "₹52.5 LPA", average: "₹6.20 LPA" },
+  { rank: 5, code: "VJEC", name: "V N R Vignana Jyothi Inst of Engg & Tech, Bachupally", highest: "₹52.0 LPA", average: "₹6.40 LPA" },
+  { rank: 6, code: "SNIS", name: "Srinidhi Institute of Science & Technology, Ghatkesar", highest: "₹52.0 LPA", average: "₹6.10 LPA" },
+  { rank: 7, code: "JNTH", name: "JNTUH College of Engg Sci & Tech, Hyderabad", highest: "₹51.5 LPA", average: "₹7.20 LPA" },
+  { rank: 8, code: "VASV", name: "Vasavi College of Engineering, Hyderabad", highest: "₹51.0 LPA", average: "₹7.10 LPA" },
+  { rank: 9, code: "OUCE", name: "O U College of Engg, Hyderabad (University Campus)", highest: "₹50.0 LPA", average: "₹7.50 LPA" },
+  { rank: 10, code: "GRRR", name: "Gokaraju Rangaraju Inst of Engg & Tech, Bachupally", highest: "₹46.0 LPA", average: "₹5.90 LPA" },
+  { rank: 11, code: "ACEG", name: "ACE Engineering College, Ghatkesar", highest: "₹46.38 LPA", average: "₹4.50 LPA" },
+  { rank: 12, code: "GNTW", name: "G Narayanamma Institute of Tech & Sci (Women), Shaikpet", highest: "₹45.5 LPA", average: "₹6.10 LPA" },
+  { rank: 13, code: "VMEG", name: "Vardhaman College of Engineering, Shamshabad", highest: "₹45.0 LPA", average: "₹5.90 LPA" },
+  { rank: 14, code: "MGIT", name: "Mahatma Gandhi Institute of Tech, Gandipet", highest: "₹45.0 LPA", average: "₹5.80 LPA" },
+  { rank: 15, code: "JNTHMT", name: "JNTUH CEST 5-Yr Integrated M.Tech (SF), Kukatpally", highest: "₹44.0 LPA", average: "₹6.80 LPA" },
+  { rank: 16, code: "BVRI", name: "B V Raju Institute of Technology, Narsapur", highest: "₹44.0 LPA", average: "₹5.80 LPA" },
+  { rank: 17, code: "KMIT", name: "Keshav Memorial Inst of Technology, Narayanaguda", highest: "₹44.0 LPA", average: "₹6.10 LPA" },
+  { rank: 18, code: "CMRG", name: "CMR Technical Campus, Kandlakoya", highest: "₹44.0 LPA", average: "₹5.10 LPA" },
+  { rank: 19, code: "MLID", name: "M L R Institute of Technology, Dundigal", highest: "₹42.0 LPA", average: "₹5.25 LPA" },
+  { rank: 20, code: "MVSR", name: "M V S R Engineering College, Nadergul", highest: "₹42.0 LPA", average: "₹5.60 LPA" },
+  { rank: 21, code: "CMRN", name: "CMR Engg College, Kandlakoya", highest: "₹40.0 LPA", average: "₹5.00 LPA" },
+  { rank: 22, code: "GURU", name: "Guru Nanak Institutions Technical Campus, Ibrahimpatnam", highest: "₹40.0 LPA", average: "₹4.90 LPA" },
+  { rank: 23, code: "GNIT", name: "Gurunanak Inst of Technology, Ibrahimpatnam", highest: "₹38.0 LPA", average: "₹4.75 LPA" },
+  { rank: 24, code: "BVRW", name: "BVRIT College of Engineering for Women, Bachupally", highest: "₹38.0 LPA", average: "₹5.20 LPA" },
+  { rank: 25, code: "KITS", name: "Kakatiya Institute of Technology and Sci, Warangal", highest: "₹38.0 LPA", average: "₹5.40 LPA" },
+  { rank: 26, code: "IARE", name: "Institute of Aeronautical Engineering, Dundigal", highest: "₹38.0 LPA", average: "₹5.25 LPA" },
+  { rank: 27, code: "MLRD", name: "Malla Reddy College of Engg Tech, Maisammaguda", highest: "₹38.0 LPA", average: "₹4.95 LPA" },
+  { rank: 28, code: "MRTN", name: "St Martins Engineering College, Dhulapally", highest: "₹38.0 LPA", average: "₹4.90 LPA" },
+  { rank: 29, code: "VGNT", name: "Vignan Institute of Technology and Sci, Deshmukhi", highest: "₹36.5 LPA", average: "₹4.90 LPA" },
+  { rank: 30, code: "MJCT", name: "M J College of Engineering & Tech, Banjara Hills", highest: "₹36.0 LPA", average: "₹5.20 LPA" },
+  { rank: 31, code: "CMRM", name: "CMR Institute of Technology, Kandlakoya", highest: "₹36.0 LPA", average: "₹4.80 LPA" },
+  { rank: 32, code: "SRHP", name: "SR University (SR Engg College), Hasanparthy", highest: "₹34.4 LPA", average: "₹5.20 LPA" },
+  { rank: 33, code: "VJIT", name: "Vidya Jyothi Institute of Technology, Moinabad", highest: "₹33.0 LPA", average: "₹4.80 LPA" },
+  { rank: 34, code: "MRCW", name: "Malla Reddy Engg College for Women, Maisammaguda", highest: "₹32.0 LPA", average: "₹4.80 LPA" },
+  { rank: 35, code: "STLW", name: "Stanley College of Engg and Tech for Women, Abids", highest: "₹31.5 LPA", average: "₹4.80 LPA" },
+  { rank: 36, code: "GCTC", name: "Geethanjali College of Engg and Technology, Keesara", highest: "₹31.3 LPA", average: "₹4.80 LPA" },
+  { rank: 37, code: "SPHN", name: "Sphoorthy Engineering College, Nadergul", highest: "₹30.0 LPA", average: "₹4.40 LPA" },
+  { rank: 38, code: "VBIT", name: "Vignan Bharati Institute of Technology, Ghatkesar", highest: "₹29.0 LPA", average: "₹4.60 LPA" },
+  { rank: 39, code: "NGIT", name: "Neil Gogte Institute of Technology, Gatkesar", highest: "₹28.0 LPA", average: "₹4.50 LPA" },
+  { rank: 40, code: "VAGE", name: "Vaagdevi College of Engineering, Warangal", highest: "₹28.0 LPA", average: "₹4.85 LPA" },
+  { rank: 41, code: "JNKR", name: "JNTUH Univ College of Engineering, Jagitial", highest: "₹24.0 LPA", average: "₹4.80 LPA" },
+  { rank: 42, code: "GLWC", name: "Gokaraju Lailavathi Engineering College, Bachupally", highest: "₹24.0 LPA", average: "₹4.60 LPA" },
+  { rank: 43, code: "BIET", name: "Bharat Institute of Engineering and Tech, Ibrahimpatnam", highest: "₹24.0 LPA", average: "₹4.50 LPA" },
+  { rank: 44, code: "SRYS", name: "Sreyas Inst of Engg and Technology, Nagole", highest: "₹24.0 LPA", average: "₹4.50 LPA" },
+  { rank: 45, code: "HITM", name: "Hyderabad Inst of Technology and Mgmt, Medchal", highest: "₹24.0 LPA", average: "₹4.30 LPA" },
+  { rank: 46, code: "LRDS", name: "Lords Institute of Engineering and Tech, Hyderabad", highest: "₹24.0 LPA", average: "₹4.30 LPA" },
+  { rank: 47, code: "TKRC", name: "T K R College of Engg and Technology, Meerpet", highest: "₹24.0 LPA", average: "₹4.30 LPA" },
+  { rank: 48, code: "KMEC", name: "Keshav Memorial Engineering College, Gatkesar", highest: "₹24.0 LPA", average: "₹4.20 LPA" },
+  { rank: 49, code: "SDEW", name: "Sridevi Womens Engineering College, Gandipet", highest: "₹24.0 LPA", average: "₹4.25 LPA" },
+  { rank: 50, code: "INDU", name: "Sri Indu College of Engg and Technology, Ibrahimpatnam", highest: "₹22.5 LPA", average: "₹4.40 LPA" }
+];
