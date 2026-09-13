@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Navbar } from "@/components/Navbar";
 
 export const metadata: Metadata = {
@@ -13,6 +15,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body className="noise antialiased">
         <Navbar />
         {children}
+        <Analytics />
+        <SpeedInsights />
         <footer className="border-t border-white/8 bg-[#070707]">
           <div className="mx-auto max-w-7xl px-5 py-14 lg:px-8">
             <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr_1fr]">
