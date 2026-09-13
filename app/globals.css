@@ -72,6 +72,10 @@
 .light-theme tbody tr td{background:#fff!important}
 .light-theme footer{background:#f1e6d0!important}
 
+/* Institute directory header: warm cream, clearly distinct from white data rows. */
+.light-theme table[data-institute-directory="true"] thead tr{background:#f7f0df!important}
+.light-theme table[data-institute-directory="true"] thead th{background:#f7f0df!important;color:#6b4528!important}
+
 /* Hero glow is almost invisible in light mode. */
 .light-theme [class*="bg-[#f4c542]/[.07]"]{background-color:rgba(107,69,40,.012)!important}
 
