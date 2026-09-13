@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Menu, X, Trophy, ListChecks, Building2, GraduationCap, BarChart3 } from "lucide-react";
+import { Menu, X, Trophy, ListChecks, Building2, GraduationCap, BarChart3, BedDouble } from "lucide-react";
 import { useState } from "react";
 
 export function SidebarMenu() {
@@ -52,6 +52,7 @@ export function SidebarMenu() {
                 </div>
               </Link>
 
+              <Link href="/hostel-availability" onClick={() => setOpen(false)} className="menu-item"><BedDouble size={18} />Hostel Availability</Link>
               <Link href="/results" onClick={() => setOpen(false)} className="menu-item"><BarChart3 size={18} />Results</Link>
               <Link href="/cutoffs" onClick={() => setOpen(false)} className="menu-item"><ListChecks size={18} />Cutoffs</Link>
               <Link href="/institute-profile" onClick={() => setOpen(false)} className="menu-item"><Building2 size={18} />Institute Profile</Link>
