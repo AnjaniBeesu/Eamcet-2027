@@ -15,7 +15,7 @@ export function Navbar(){
           <Link href="/results" className="hover:text-white">Results</Link>
           <Link href="/cutoffs" className="hover:text-white">Cutoffs</Link>
           <Link href="/institute-profile" className="hover:text-white">Institute Profile</Link>
-          <Link href="/rank-predictor" className="hover:text-white">Rank Predictor</Link>
+          <Link href="/college-predictor" className="hover:text-white">College Predictor</Link>
           <Link href="/college-ranking" className="hover:text-white">College Ranking</Link>
           <Link href="/placement-ranking" className="hover:text-white">Placements</Link>
           <Link href="/hostel-availability" className="hover:text-white">Hostel</Link>
