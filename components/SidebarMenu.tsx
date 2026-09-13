@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Menu, X, Trophy, ListChecks, Building2, GraduationCap, BarChart3, BedDouble, BriefcaseBusiness, Landmark, SearchCheck } from "lucide-react";
+import { Menu, X, Trophy, ListChecks, Building2, BarChart3, BedDouble, BriefcaseBusiness, Landmark, SearchCheck } from "lucide-react";
 import { useState } from "react";
 
 export function SidebarMenu() {
@@ -12,8 +12,8 @@ export function SidebarMenu() {
       <button type="button" onClick={() => setOpen(true)} aria-label="Open menu" className="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-white/10 bg-white/5 transition hover:scale-105 hover:bg-white/10"><Menu size={19} /></button>
       {open && (
         <div className="mobile-menu-overlay fixed inset-0 z-[100]">
-          <button aria-label="Close menu" className="mobile-menu-backdrop absolute inset-0" onClick={() => setOpen(false)} />
-          <aside className="mobile-menu-drawer absolute right-0 top-0 flex h-full w-[min(360px,88vw)] flex-col border-l border-white/10 bg-[#070707] p-6 shadow-2xl">
+          <div aria-hidden="true" className="mobile-menu-backdrop absolute inset-0" onClick={() => setOpen(false)} />
+          <aside className="mobile-menu-drawer absolute right-0 top-0 z-[101] flex h-full w-[min(360px,88vw)] flex-col border-l border-white/10 bg-[#070707] p-6 shadow-2xl">
             <div className="flex items-center justify-between">
               <div><p className="text-xs font-black uppercase tracking-[.2em] text-[#f4c542]">Explore</p><h2 className="mt-1 text-2xl font-black">EAMCET 2027</h2></div>
               <button type="button" onClick={() => setOpen(false)} aria-label="Close menu" className="grid h-9 w-9 place-items-center rounded-full border border-white/10 bg-white/5 transition hover:bg-white/10"><X size={19} /></button>
