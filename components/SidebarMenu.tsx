@@ -15,7 +15,7 @@ export function SidebarMenu() {
 
       {open && (
         <div className="fixed inset-0 z-[100]">
-          <button aria-label="Close menu" className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={() => setOpen(false)} />
+          <button aria-label="Close menu" className="absolute inset-0 bg-black/60" onClick={() => setOpen(false)} />
           <aside className="absolute right-0 top-0 flex h-full w-[min(360px,88vw)] flex-col border-l border-white/10 bg-[#070707] p-6 shadow-2xl">
             <div className="flex items-center justify-between">
               <div>
