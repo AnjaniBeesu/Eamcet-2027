@@ -7,11 +7,11 @@ export default function InstituteProfileEnhancer() {
     const applyGirlsRowColors = () => {
       const isLight = document.documentElement.classList.contains("light-theme");
       document.querySelectorAll<HTMLElement>('main table tbody tr[data-girls-college="true"]').forEach((row) => {
-        row.style.setProperty(
-          "background-color",
-          isLight ? "#fff0f5" : "rgba(255, 182, 193, 0.10)",
-          "important"
-        );
+        const background = isLight ? "#fff0f5" : "rgba(255, 182, 193, 0.18)";
+        row.style.setProperty("background-color", background, "important");
+        row.querySelectorAll<HTMLElement>("td").forEach((cell) => {
+          cell.style.setProperty("background-color", background, "important");
+        });
       });
     };
 
@@ -28,6 +28,12 @@ export default function InstituteProfileEnhancer() {
         );
         if (isGirlsCollege) {
           el.dataset.girlsCollege = "true";
+          const isLight = document.documentElement.classList.contains("light-theme");
+          const background = isLight ? "#fff0f5" : "rgba(255, 182, 193, 0.18)";
+          el.style.setProperty("background-color", background, "important");
+          el.querySelectorAll<HTMLElement>("td").forEach((cell) => {
+            cell.style.setProperty("background-color", background, "important");
+          });
         }
 
         if (el.dataset.profileEnhanced === "true") return;
@@ -42,11 +48,11 @@ export default function InstituteProfileEnhancer() {
         if (isGirlsCollege) {
           el.addEventListener("mouseenter", () => {
             const isLight = document.documentElement.classList.contains("light-theme");
-            el.style.setProperty(
-              "background-color",
-              isLight ? "#ffe6ee" : "rgba(255, 182, 193, 0.16)",
-              "important"
-            );
+            const background = isLight ? "#ffe6ee" : "rgba(255, 182, 193, 0.25)";
+            el.style.setProperty("background-color", background, "important");
+            el.querySelectorAll<HTMLElement>("td").forEach((cell) => {
+              cell.style.setProperty("background-color", background, "important");
+            });
           });
           el.addEventListener("mouseleave", applyGirlsRowColors);
         }
