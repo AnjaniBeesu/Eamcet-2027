@@ -9,7 +9,7 @@ export default function Home() {
         <div className="pointer-events-none absolute left-1/2 top-[-180px] h-[420px] w-[720px] -translate-x-1/2 rounded-full bg-[#f4c542]/[.07] blur-[110px]" />
         <div className="mx-auto max-w-7xl px-5 pb-24 pt-20 lg:px-8 lg:pb-28 lg:pt-28">
           <div className="max-w-4xl">
-            <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-[#f4c542]/20 bg-[#f4c542]/5 px-3 py-1.5 text-xs font-bold text-[#f4c542]"><Sparkles size={13}/> Built for Telangana engineering aspirants</div>
+            <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-[#f4c542]/20 bg-[#f4c542]/5 px-3 py-1.5 text-xs font-bold text-white"><Sparkles size={13}/> Built for Telangana engineering aspirants</div>
             <h1 className="text-5xl font-black leading-[.98] tracking-[-.045em] sm:text-7xl lg:text-[92px]">Your rank.<br/><span className="text-[#f4c542]">Your chances.</span><br/>Your college.</h1>
             <p className="mt-7 max-w-2xl text-base leading-7 text-zinc-400 sm:text-lg">Stop guessing where your TG EAPCET rank can take you. Compare it against previous counselling cutoffs and build a smarter college shortlist.</p>
             <div className="mt-9 flex flex-wrap gap-3"><a href="#predictor" className="inline-flex items-center gap-2 rounded-full bg-[#f4c542] px-6 py-3.5 font-black text-black transition hover:bg-[#f8d968]">Check my chances <ArrowRight size={17}/></a><Link href="/colleges" className="inline-flex items-center gap-2 rounded-full border border-white/10 px-6 py-3.5 font-bold text-white transition hover:border-white/20">Browse colleges</Link></div>
