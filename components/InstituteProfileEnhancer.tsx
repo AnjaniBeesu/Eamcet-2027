@@ -18,6 +18,7 @@ export default function InstituteProfileEnhancer() {
     const setup = () => {
       const table = document.querySelector("main table");
       if (!table) return false;
+      table.setAttribute("data-institute-directory", "true");
 
       const rows = table.querySelectorAll("tbody tr");
       rows.forEach((row) => {
