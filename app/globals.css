@@ -1,6 +1,8 @@
 @import "tailwindcss";
 :root{--bg:#070707;--panel:#101010;--line:#272727;--text:#f6f5ef;--muted:#92918a;--yellow:#f4c542}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;transition:background-color .2s ease,color .2s ease}button,input,select{font:inherit}::selection{background:var(--yellow);color:#080808}.grid-bg{background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:48px 48px}.noise:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.018;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}.yellow{color:var(--yellow)}
 
+.menu-item{display:flex;align-items:center;gap:.75rem;border-radius:1rem;padding:.85rem 1rem;font-size:.875rem;font-weight:800;color:#a1a1aa;transition:background-color .2s ease,color .2s ease}.menu-item:hover{background:rgba(255,255,255,.05);color:#fff}
+
 /* LIGHT THEME — warm cream, coffee brown, and NO yellow. */
 .light-theme{--bg:#f7f0df;--panel:#fffaf0;--line:#d8c9ad;--text:#2b2118;--muted:#6f6254;--yellow:#6b4528;color-scheme:light}
 .light-theme body{background:#f7f0df!important;color:#2b2118!important}
@@ -63,6 +65,7 @@
 
 /* Navigation/theme control */
 .light-theme .theme-toggle{color:#6b4528!important;border-color:rgba(107,69,40,.2)!important;background:rgba(107,69,40,.07)!important}
+.light-theme .menu-item{color:#6f6254}.light-theme .menu-item:hover{background:rgba(107,69,40,.08);color:#2b2118}
 
 /* Institute rows */
 .light-theme [class*="hover:bg-[#f4c542]/[.04]"]:hover{background-color:#fffaf0!important}
