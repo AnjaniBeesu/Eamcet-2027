@@ -4,6 +4,17 @@ import { useEffect } from "react";
 
 export default function InstituteProfileEnhancer() {
   useEffect(() => {
+    const applyGirlsRowColors = () => {
+      const isLight = document.documentElement.classList.contains("light-theme");
+      document.querySelectorAll<HTMLElement>('main table tbody tr[data-girls-college="true"]').forEach((row) => {
+        row.style.setProperty(
+          "background-color",
+          isLight ? "#fff0f5" : "rgba(255, 182, 193, 0.10)",
+          "important"
+        );
+      });
+    };
+
     const setup = () => {
       const table = document.querySelector("main table");
       if (!table) return false;
@@ -11,6 +22,13 @@ export default function InstituteProfileEnhancer() {
       const rows = table.querySelectorAll("tbody tr");
       rows.forEach((row) => {
         const el = row as HTMLElement;
+        const isGirlsCollege = Array.from(row.querySelectorAll("td")).some(
+          (cell) => cell.textContent?.trim().toUpperCase() === "GIRLS"
+        );
+        if (isGirlsCollege) {
+          el.dataset.girlsCollege = "true";
+        }
+
         if (el.dataset.profileEnhanced === "true") return;
         const codeLink = row.querySelector<HTMLAnchorElement>("a[href*='iCode=']");
         const code = codeLink?.href.match(/iCode=([^&]+)/)?.[1];
@@ -20,22 +38,16 @@ export default function InstituteProfileEnhancer() {
         el.classList.add("cursor-pointer");
         el.title = "Click to view institute profile";
 
-        // Give the ENTIRE girls-only college row a soft pastel-pink treatment.
-        const isGirlsCollege = Array.from(row.querySelectorAll("td")).some(
-          (cell) => cell.textContent?.trim().toUpperCase() === "GIRLS"
-        );
         if (isGirlsCollege) {
-          el.dataset.girlsCollege = "true";
-          const applyGirlsRowColor = () => {
-            const isLight = document.documentElement.classList.contains("light-theme");
-            el.style.backgroundColor = isLight ? "#fff0f5" : "rgba(255, 182, 193, 0.10)";
-          };
-          applyGirlsRowColor();
           el.addEventListener("mouseenter", () => {
             const isLight = document.documentElement.classList.contains("light-theme");
-            el.style.backgroundColor = isLight ? "#ffe6ee" : "rgba(255, 182, 193, 0.16)";
+            el.style.setProperty(
+              "background-color",
+              isLight ? "#ffe6ee" : "rgba(255, 182, 193, 0.16)",
+              "important"
+            );
           });
-          el.addEventListener("mouseleave", applyGirlsRowColor);
+          el.addEventListener("mouseleave", applyGirlsRowColors);
         }
 
         el.addEventListener("click", (event) => {
@@ -43,6 +55,8 @@ export default function InstituteProfileEnhancer() {
           window.location.href = `/institute-profile/details?code=${encodeURIComponent(code)}`;
         });
       });
+
+      applyGirlsRowColors();
 
       const description = Array.from(document.querySelectorAll("main p")).find((p) =>
         p.textContent?.includes("Browse the institute profile directory")
@@ -58,10 +72,19 @@ export default function InstituteProfileEnhancer() {
       return true;
     };
 
-    if (setup()) return;
-    const observer = new MutationObserver(() => setup());
-    observer.observe(document.body, { childList: true, subtree: true });
-    return () => observer.disconnect();
+    const themeObserver = new MutationObserver(applyGirlsRowColors);
+    themeObserver.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+
+    if (setup()) return () => themeObserver.disconnect();
+    const tableObserver = new MutationObserver(() => setup());
+    tableObserver.observe(document.body, { childList: true, subtree: true });
+    return () => {
+      tableObserver.disconnect();
+      themeObserver.disconnect();
+    };
   }, []);
 
   return null;
