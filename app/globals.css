@@ -14,8 +14,12 @@
 .light-theme table{color:#2b2118;background:#fff!important}.light-theme thead{background:#fff!important}.light-theme th{color:#6f6254!important;background:#fff!important}.light-theme td{color:#2b2118;border-color:#d8c9ad!important;background:#fff!important}.light-theme tbody tr{background:#fff!important}.light-theme tbody tr:hover{background:#fffaf0!important}.light-theme tbody tr td{background:#fff!important}.light-theme footer{background:#f1e6d0!important}.light-theme table[data-institute-directory="true"] thead tr{background:#f7f0df!important}.light-theme table[data-institute-directory="true"] thead th{background:#f7f0df!important;color:#6b4528!important}
 .light-theme [class*="bg-[#f4c542]/[.07]"]{background-color:rgba(107,69,40,.012)!important}.light-theme footer div[class*="border-[#f4c542]/15"]{background:#6b4528!important;border-color:#6b4528!important}.light-theme footer div[class*="border-[#f4c542]/15"] p{color:#fff!important}.light-theme footer div[class*="border-[#f4c542]/15"] a{color:#fff!important}
 
-/* Mobile/tablet: tell users that wide tables can be swiped horizontally. */
-@media (max-width:1279px){.overflow-x-auto:has(table){position:relative;padding-bottom:2.5rem}.overflow-x-auto:has(table)::after{content:"↔  Scroll right to see the complete table";position:absolute;left:50%;bottom:.45rem;transform:translateX(-50%);white-space:nowrap;font-size:.7rem;font-weight:800;letter-spacing:.02em;color:#a1a1aa;pointer-events:none}.light-theme .overflow-x-auto:has(table)::after{color:#6f6254}}
+/* Every wide table gets a clear scroll instruction above it on all screen sizes. */
+.overflow-x-auto:has(table){position:relative;padding-top:2.35rem}
+.overflow-x-auto:has(table)::before{content:"↔  Scroll right to see the complete table";position:absolute;left:0;right:0;top:.45rem;text-align:center;white-space:nowrap;font-size:.75rem;font-weight:800;letter-spacing:.02em;color:#a1a1aa;pointer-events:none;z-index:2}
+.light-theme .overflow-x-auto:has(table)::before{color:#6f6254}
 
-/* Mobile drawer itself is solid; only the backdrop is translucent. */
+/* Mobile drawer: the area behind it is fully opaque, so nothing underneath shows through. */
+.mobile-menu-backdrop{background:#070707!important;opacity:1!important;backdrop-filter:none!important}
+.light-theme .mobile-menu-backdrop{background:#f7f0df!important}
 .mobile-menu-drawer{background:#070707!important;opacity:1!important;backdrop-filter:none!important}.light-theme .mobile-menu-drawer{background:#fffaf0!important}
