@@ -385,6 +385,796 @@ const profiles: Record<string, CollegeProfile> = {
     name: "Kasireddy Narayan Reddy Coll Engg Res, Hayathnagar", code: "KNRR", website: "https://knrrc.ac.in/", guide: { name: "Principal", branch: "", year: "", phone: "+91-9393808468", email: "principal@knrrc.ac.in" },
     fees: { "CSE": "₹63,000 / year", "CSE (AI/ML)": "₹63,000 / year", "ECE": "₹63,000 / year", "EEE": "₹63,000 / year", "Other branches": "₹63,000 / year" }, highest: "₹12.0 LPA", average: "₹3.40 LPA",
   },
+    KPRC: {
+    name: "KPRIT College of Engineering",
+    code: "KPRC",
+    website: "https://kprit.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-8978692777", email: "info@kprit.ac.in" },
+    fees: { "CSE": "₹90,000 / year", "CSE (AI/ML)": "₹90,000 / year", "ECE": "₹90,000 / year", "EEE": "₹90,000 / year", "Other branches": "₹90,000 / year" },
+    highest: "₹18.0 LPA", average: "₹4.00 LPA",
+  },
+
+  KPRT: {
+    name: "Kommuri Pratap Reddy Institute of Technology",
+    code: "KPRT",
+    website: "https://kpritech.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9542083666", email: "admissions@kpritech.ac.in" },
+    fees: { "CSE": "₹85,000 / year", "CSE (AI/ML)": "₹85,000 / year", "ECE": "₹85,000 / year", "EEE": "₹85,000 / year", "Other branches": "₹85,000 / year" },
+    highest: "₹16.5 LPA", average: "₹3.90 LPA",
+  },
+
+  KSGI: {
+    name: "Government Engineering College, Kosgi",
+    code: "KSGI",
+    website: "https://dte.telangana.gov.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-40-23221511", email: "geckosgi@gmail.com" },
+    fees: { "CSE": "₹15,000–₹18,000 / year", "CSE (AI/ML)": "₹15,000–₹18,000 / year", "ECE": "₹15,000–₹18,000 / year", "EEE": "₹15,000–₹18,000 / year", "Other branches": "₹15,000–₹18,000 / year" },
+    highest: "₹6.0 LPA", average: "₹3.00 LPA",
+  },
+
+  KTKM: {
+    name: "Kamala Institute of Technology & Science",
+    code: "KTKM",
+    website: "https://kitshzb.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-8727-252744", email: "kitshzb@gmail.com" },
+    fees: { "CSE": "₹95,000 / year", "CSE (AI/ML)": "₹95,000 / year", "ECE": "₹95,000 / year", "EEE": "₹95,000 / year", "Other branches": "₹95,000 / year" },
+    highest: "₹15.0 LPA", average: "₹4.20 LPA",
+  },
+
+  KUEWSF: {
+    name: "University College of Engineering & Technology for Women, KU",
+    code: "KUEWSF",
+    website: "https://kakatiya.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-870-2439366", email: "ucetwku@gmail.com" },
+    fees: { "CSE": "₹70,000 / year", "CSE (AI/ML)": "₹70,000 / year", "ECE": "₹70,000 / year", "EEE": "₹70,000 / year", "Other branches": "₹70,000 / year" },
+    highest: "₹12.0 LPA", average: "₹3.80 LPA",
+  },
+
+  KUWL: {
+    name: "KU College of Engineering and Technology",
+    code: "KUWL",
+    website: "https://kucek.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-870-2454548", email: "principal_kuce@yahoo.com" },
+    fees: { "CSE": "₹35,000–₹50,000 / year", "CSE (AI/ML)": "₹35,000–₹50,000 / year", "ECE": "₹35,000–₹50,000 / year", "EEE": "₹35,000–₹50,000 / year", "Other branches": "₹35,000–₹50,000 / year" },
+    highest: "₹16.0 LPA", average: "₹4.50 LPA",
+  },
+
+  LRDS: {
+    name: "Lords Institute of Engineering and Technology",
+    code: "LRDS",
+    website: "https://lords.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9440954581", email: "admissions@lords.ac.in" },
+    fees: { "CSE": "₹95,000 / year", "CSE (AI/ML)": "₹95,000 / year", "ECE": "₹95,000 / year", "EEE": "₹95,000 / year", "Other branches": "₹95,000 / year" },
+    highest: "₹24.0 LPA", average: "₹4.30 LPA",
+  },
+
+  MDRK: {
+    name: "Madhira Institute of Technology and Science",
+    code: "MDRK",
+    website: "https://mitskodad.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9848562325", email: "mits_kodad@yahoo.com" },
+    fees: { "CSE": "₹45,000 / year", "CSE (AI/ML)": "₹45,000 / year", "ECE": "₹45,000 / year", "EEE": "₹45,000 / year", "Other branches": "₹45,000 / year" },
+    highest: "₹7.0 LPA", average: "₹2.80 LPA",
+  },
+
+  METH: {
+    name: "Methodist College of Engineering & Technology",
+    code: "METH",
+    website: "https://methodist.edu.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-40-24755999", email: "principal@methodist.edu.in" },
+    fees: { "CSE": "₹90,000 / year", "CSE (AI/ML)": "₹90,000 / year", "ECE": "₹90,000 / year", "EEE": "₹90,000 / year", "Other branches": "₹90,000 / year" },
+    highest: "₹18.0 LPA", average: "₹4.10 LPA",
+  },
+
+  MGHA: {
+    name: "Megha Institute of Engineering & Technology for Women",
+    code: "MGHA",
+    website: "https://meghaengg.co.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9848604313", email: "mietw.principal@gmail.com" },
+    fees: { "CSE": "₹48,000 / year", "CSE (AI/ML)": "₹48,000 / year", "ECE": "₹48,000 / year", "EEE": "₹48,000 / year", "Other branches": "₹48,000 / year" },
+    highest: "₹8.5 LPA", average: "₹3.10 LPA",
+  },
+
+  MGIT: {
+    name: "Mahatma Gandhi Institute of Technology",
+    code: "MGIT",
+    website: "https://mgit.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-8466997001", email: "admissions@mgit.ac.in" },
+    fees: { "CSE": "₹1,60,000 / year", "CSE (AI/ML)": "₹1,60,000 / year", "ECE": "₹1,60,000 / year", "EEE": "₹1,60,000 / year", "Other branches": "₹1,60,000 / year" },
+    highest: "₹45.0 LPA", average: "₹5.80 LPA",
+  },
+
+  MGUNSF: {
+    name: "MGU College of Engineering & Technology",
+    code: "MGUNSF",
+    website: "https://mguniversity.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-8682-221999", email: "mgucetnlga@gmail.com" },
+    fees: { "CSE": "₹65,000 / year", "CSE (AI/ML)": "₹65,000 / year", "ECE": "₹65,000 / year", "EEE": "₹65,000 / year", "Other branches": "₹65,000 / year" },
+    highest: "₹10.0 LPA", average: "₹3.60 LPA",
+  },
+
+  MHVR: {
+    name: "Mahaveer Institute of Science & Technology",
+    code: "MHVR",
+    website: "https://mist.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-8413-202244", email: "principal.mahaveer@gmail.com" },
+    fees: { "CSE": "₹75,000 / year", "CSE (AI/ML)": "₹75,000 / year", "ECE": "₹75,000 / year", "EEE": "₹75,000 / year", "Other branches": "₹75,000 / year" },
+    highest: "₹14.0 LPA", average: "₹3.50 LPA",
+  },
+
+  MINA: {
+    name: "Mina Institute of Engineering & Technology for Women",
+    code: "MINA",
+    website: "https://minawomenengg.com/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9849552199", email: "mina.miryalaguda@gmail.com" },
+    fees: { "CSE": "₹42,000 / year", "CSE (AI/ML)": "₹42,000 / year", "ECE": "₹42,000 / year", "EEE": "₹42,000 / year", "Other branches": "₹42,000 / year" },
+    highest: "₹6.5 LPA", average: "₹2.75 LPA",
+  },
+
+  MJCT: {
+    name: "M J College of Engineering & Technology",
+    code: "MJCT",
+    website: "https://mjcollege.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-40-23350356", email: "principal@mjcollege.ac.in" },
+    fees: { "CSE": "₹1,20,000 / year", "CSE (AI/ML)": "₹1,20,000 / year", "ECE": "₹1,20,000 / year", "EEE": "₹1,20,000 / year", "Other branches": "₹1,20,000 / year" },
+    highest: "₹36.0 LPA", average: "₹5.20 LPA",
+  },
+
+  MLID: {
+    name: "M L R Institute of Technology",
+    code: "MLID",
+    website: "https://mlrit.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9652222122", email: "admissions@mlrinstitutions.ac.in" },
+    fees: { "CSE": "₹1,15,000 / year", "CSE (AI/ML)": "₹1,15,000 / year", "ECE": "₹1,15,000 / year", "EEE": "₹1,15,000 / year", "Other branches": "₹1,15,000 / year" },
+    highest: "₹42.0 LPA", average: "₹5.25 LPA",
+  },
+
+  MLRD: {
+    name: "Malla Reddy College of Engineering and Technology",
+    code: "MLRD",
+    website: "https://cmrcet.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9246394322", email: "mrcet2004@gmail.com" },
+    fees: { "CSE": "₹1,05,000 / year", "CSE (AI/ML)": "₹1,05,000 / year", "ECE": "₹1,05,000 / year", "EEE": "₹1,05,000 / year", "Other branches": "₹1,05,000 / year" },
+    highest: "₹38.0 LPA", average: "₹4.95 LPA",
+  },
+
+  MLRS: {
+    name: "Marri Laxman Reddy Institute of Technology & Management",
+    code: "MLRS",
+    website: "https://mlritm.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9160400039", email: "infomlritm@gmail.com" },
+    fees: { "CSE": "₹1,00,000 / year", "CSE (AI/ML)": "₹1,00,000 / year", "ECE": "₹1,00,000 / year", "EEE": "₹1,00,000 / year", "Other branches": "₹1,00,000 / year" },
+    highest: "₹35.0 LPA", average: "₹4.75 LPA",
+  },
+
+  MMTZ: {
+    name: "Mumtaz College of Engineering Technology",
+    code: "MMTZ",
+    website: "https://mumtazcolleges.com/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-40-24520023", email: "mcet_hyd@yahoo.com" },
+    fees: { "CSE": "₹46,000 / year", "CSE (AI/ML)": "₹46,000 / year", "ECE": "₹46,000 / year", "EEE": "₹46,000 / year", "Other branches": "₹46,000 / year" },
+    highest: "₹8.0 LPA", average: "₹3.00 LPA",
+  },
+
+  MOTK: {
+    name: "Mother Teresa Institute of Science & Technology",
+    code: "MOTK",
+    website: "https://mistedu.org/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9849504624", email: "info@mistedu.org" },
+    fees: { "CSE": "₹60,000 / year", "CSE (AI/ML)": "₹60,000 / year", "ECE": "₹60,000 / year", "EEE": "₹60,000 / year", "Other branches": "₹60,000 / year" },
+    highest: "₹11.5 LPA", average: "₹3.40 LPA",
+  },
+
+  MRCE: {
+    name: "Malla Reddy College of Engineering",
+    code: "MRCE",
+    website: "https://mrce.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9348161125", email: "principal@mrce.in" },
+    fees: { "CSE": "₹85,000 / year", "CSE (AI/ML)": "₹85,000 / year", "ECE": "₹85,000 / year", "EEE": "₹85,000 / year", "Other branches": "₹85,000 / year" },
+    highest: "₹24.0 LPA", average: "₹4.10 LPA",
+  },
+
+  MRCW: {
+    name: "Malla Reddy Engineering College for Women",
+    code: "MRCW",
+    website: "https://mallareddyecw.com/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9346118803", email: "adminmrecw@gmail.com" },
+    fees: { "CSE": "₹90,000 / year", "CSE (AI/ML)": "₹90,000 / year", "ECE": "₹90,000 / year", "EEE": "₹90,000 / year", "Other branches": "₹90,000 / year" },
+    highest: "₹32.0 LPA", average: "₹4.80 LPA",
+  },
+
+  MREM: {
+    name: "Malla Reddy Engineering College & Management Sciences",
+    code: "MREM",
+    website: "https://mrem.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9346162620", email: "principal@mrem.ac.in" },
+    fees: { "CSE": "₹80,000 / year", "CSE (AI/ML)": "₹80,000 / year", "ECE": "₹80,000 / year", "EEE": "₹80,000 / year", "Other branches": "₹80,000 / year" },
+    highest: "₹21.0 LPA", average: "₹4.00 LPA",
+  },
+
+  MRTN: {
+    name: "St Martins Engineering College",
+    code: "MRTN",
+    website: "https://smec.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-8008333876", email: "admissions@smec.ac.in" },
+    fees: { "CSE": "₹1,00,000 / year", "CSE (AI/ML)": "₹1,00,000 / year", "ECE": "₹1,00,000 / year", "EEE": "₹1,00,000 / year", "Other branches": "₹1,00,000 / year" },
+    highest: "₹38.0 LPA", average: "₹4.90 LPA",
+  },
+
+  MTEC: {
+    name: "Mother Theresa College of Engineering & Technology",
+    code: "MTEC",
+    website: "https://mtcet.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9849354095", email: "mtcet.pdpl@gmail.com" },
+    fees: { "CSE": "₹45,000 / year", "CSE (AI/ML)": "₹45,000 / year", "ECE": "₹45,000 / year", "EEE": "₹45,000 / year", "Other branches": "₹45,000 / year" },
+    highest: "₹7.5 LPA", average: "₹3.00 LPA",
+  },
+
+  MVSR: {
+    name: "M V S R Engineering College",
+    code: "MVSR",
+    website: "https://mvsrec.edu.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9441113035", email: "principal@mvsrec.edu.in" },
+    fees: { "CSE": "₹1,30,000 / year", "CSE (AI/ML)": "₹1,30,000 / year", "ECE": "₹1,30,000 / year", "EEE": "₹1,30,000 / year", "Other branches": "₹1,30,000 / year" },
+    highest: "₹42.0 LPA", average: "₹5.60 LPA",
+  },
+    NAWB: {
+    name: "Nawab Shah Alam Khan College of Engineering & Technology",
+    code: "NAWB",
+    website: "https://nsakcet.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-40-24561136", email: "principal@nsakcet.ac.in" },
+    fees: { "CSE": "₹72,000 / year", "CSE (AI/ML)": "₹72,000 / year", "ECE": "₹72,000 / year", "EEE": "₹72,000 / year", "Other branches": "₹72,000 / year" },
+    highest: "₹14.5 LPA", average: "₹3.65 LPA",
+  },
+
+  NGIT: {
+    name: "Neil Gogte Institute of Technology",
+    code: "NGIT",
+    website: "https://ngit.edu.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9396956100", email: "principal@ngit.edu.in" },
+    fees: { "CSE": "₹95,000 / year", "CSE (AI/ML)": "₹95,000 / year", "ECE": "₹95,000 / year", "EEE": "₹95,000 / year", "Other branches": "₹95,000 / year" },
+    highest: "₹28.0 LPA", average: "₹4.50 LPA",
+  },
+
+  NNRG: {
+    name: "Nalla Narasimha Reddy Educational Society Group",
+    code: "NNRG",
+    website: "https://nnrg.edu.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9885294441", email: "admin@nnrg.edu.in" },
+    fees: { "CSE": "₹88,000 / year", "CSE (AI/ML)": "₹88,000 / year", "ECE": "₹88,000 / year", "EEE": "₹88,000 / year", "Other branches": "₹88,000 / year" },
+    highest: "₹18.0 LPA", average: "₹3.95 LPA",
+  },
+
+  NRCM: {
+    name: "Narsimha Reddy Engineering College",
+    code: "NRCM",
+    website: "https://nrcmec.org/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9963574441", email: "principal@nrcmec.org" },
+    fees: { "CSE": "₹80,000 / year", "CSE (AI/ML)": "₹80,000 / year", "ECE": "₹80,000 / year", "EEE": "₹80,000 / year", "Other branches": "₹80,000 / year" },
+    highest: "₹16.0 LPA", average: "₹3.85 LPA",
+  },
+
+  NREC: {
+    name: "Nallamalla Reddy Engineering College",
+    code: "NREC",
+    website: "https://nmrec.edu.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9000213123", email: "info@nmrec.edu.in" },
+    fees: { "CSE": "₹85,000 / year", "CSE (AI/ML)": "₹85,000 / year", "ECE": "₹85,000 / year", "EEE": "₹85,000 / year", "Other branches": "₹85,000 / year" },
+    highest: "₹17.5 LPA", average: "₹3.90 LPA",
+  },
+
+  OUCE: {
+    name: "O U College of Engineering (Regular)",
+    code: "OUCE",
+    website: "https://uceou.edu/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-40-27098254", email: "principal.uce@osmania.ac.in" },
+    fees: { "CSE": "₹35,000–₹50,000 / year", "CSE (AI/ML)": "₹35,000–₹50,000 / year", "ECE": "₹35,000–₹50,000 / year", "EEE": "₹35,000–₹50,000 / year", "Other branches": "₹35,000–₹50,000 / year" },
+    highest: "₹50.0 LPA", average: "₹7.50 LPA",
+  },
+
+  OUCT: {
+    name: "O U College of Technology",
+    code: "OUCT",
+    website: "https://ouct.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-40-27098472", email: "principal@ouct.ac.in" },
+    fees: { "CSE": "₹35,000–₹45,000 / year", "CSE (AI/ML)": "₹35,000–₹45,000 / year", "ECE": "₹35,000–₹45,000 / year", "EEE": "₹35,000–₹45,000 / year", "Other branches": "₹35,000–₹45,000 / year" },
+    highest: "₹22.0 LPA", average: "₹5.40 LPA",
+  },
+
+  PALV: {
+    name: "Pallavi Engineering College",
+    code: "PALV",
+    website: "https://pallavienggcollege.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9246111166", email: "principal@pec.ac.in" },
+    fees: { "CSE": "₹60,000 / year", "CSE (AI/ML)": "₹60,000 / year", "ECE": "₹60,000 / year", "EEE": "₹60,000 / year", "Other branches": "₹60,000 / year" },
+    highest: "₹12.0 LPA", average: "₹3.40 LPA",
+  },
+
+  PETW: {
+    name: "Princeton Institute of Engineering Technology for Women",
+    code: "PETW",
+    website: "https://petw.co.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9246200259", email: "princeton.women@gmail.com" },
+    fees: { "CSE": "₹47,000 / year", "CSE (AI/ML)": "₹47,000 / year", "ECE": "₹47,000 / year", "EEE": "₹47,000 / year", "Other branches": "₹47,000 / year" },
+    highest: "₹9.0 LPA", average: "₹3.15 LPA",
+  },
+
+  PRIW: {
+    name: "Priyadarshini Institute of Science & Technology for Women",
+    code: "PRIW",
+    website: "https://priyadarshiniengg.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9849202511", email: "priw_khammam@gmail.com" },
+    fees: { "CSE": "₹45,000 / year", "CSE (AI/ML)": "₹45,000 / year", "ECE": "₹45,000 / year", "EEE": "₹45,000 / year", "Other branches": "₹45,000 / year" },
+    highest: "₹8.0 LPA", average: "₹3.10 LPA",
+  },
+
+  PUCE: {
+    name: "University College of Engineering, Palamuru University",
+    code: "PUCE",
+    website: "https://palamuruuniversity.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-8542-277114", email: "puce.pu@gmail.com" },
+    fees: { "CSE": "₹45,000 / year", "CSE (AI/ML)": "₹45,000 / year", "ECE": "₹45,000 / year", "EEE": "₹45,000 / year", "Other branches": "₹45,000 / year" },
+    highest: "₹11.0 LPA", average: "₹3.80 LPA",
+  },
+
+  RITW: {
+    name: "Rishi MS Institute of Engineering and Technology for Women",
+    code: "RITW",
+    website: "https://rishims.com/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-40-23851575", email: "principal@rishims.com" },
+    fees: { "CSE": "₹65,000 / year", "CSE (AI/ML)": "₹65,000 / year", "ECE": "₹65,000 / year", "EEE": "₹65,000 / year", "Other branches": "₹65,000 / year" },
+    highest: "₹14.0 LPA", average: "₹3.70 LPA",
+  },
+
+  SAGR: {
+    name: "Sagar Group of Institutions",
+    code: "SAGR",
+    website: "https://sagar.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9849646543", email: "sgi.chevella@gmail.com" },
+    fees: { "CSE": "₹40,000 / year", "CSE (AI/ML)": "₹40,000 / year", "ECE": "₹40,000 / year", "EEE": "₹40,000 / year", "Other branches": "₹40,000 / year" },
+    highest: "₹6.5 LPA", average: "₹2.80 LPA",
+  },
+
+  SAIS: {
+    name: "Sai Spurthi Institute of Technology",
+    code: "SAIS",
+    website: "https://saispurthi.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9849495112", email: "ssit.principal@gmail.com" },
+    fees: { "CSE": "₹55,000 / year", "CSE (AI/ML)": "₹55,000 / year", "ECE": "₹55,000 / year", "EEE": "₹55,000 / year", "Other branches": "₹55,000 / year" },
+    highest: "₹10.5 LPA", average: "₹3.40 LPA",
+  },
+
+  SANA: {
+    name: "Sana Engineering College",
+    code: "SANA",
+    website: "https://sana.edu.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9849924513", email: "sanaprincipal@gmail.com" },
+    fees: { "CSE": "₹43,000 / year", "CSE (AI/ML)": "₹43,000 / year", "ECE": "₹43,000 / year", "EEE": "₹43,000 / year", "Other branches": "₹43,000 / year" },
+    highest: "₹7.5 LPA", average: "₹2.90 LPA",
+  },
+
+  SBIT: {
+    name: "Swarna Bharathi Institute of Science & Technology",
+    code: "SBIT",
+    website: "https://sbit.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9849516055", email: "sbitkhammam@gmail.com" },
+    fees: { "CSE": "₹70,000 / year", "CSE (AI/ML)": "₹70,000 / year", "ECE": "₹70,000 / year", "EEE": "₹70,000 / year", "Other branches": "₹70,000 / year" },
+    highest: "₹15.0 LPA", average: "₹3.75 LPA",
+  },
+
+  SCET: {
+    name: "Shadan College of Engineering and Technology",
+    code: "SCET",
+    website: "https://shadan.edu.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9848135811", email: "scet_shadan@yahoo.co.in" },
+    fees: { "CSE": "₹78,000 / year", "CSE (AI/ML)": "₹78,000 / year", "ECE": "₹78,000 / year", "EEE": "₹78,000 / year", "Other branches": "₹78,000 / year" },
+    highest: "₹16.0 LPA", average: "₹3.60 LPA",
+  },
+
+  SCIT: {
+    name: "Sri Chaitanya Institute of Technology & Research",
+    code: "SCIT",
+    website: "https://scitr.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9866124511", email: "scitrkhammam@gmail.com" },
+    fees: { "CSE": "₹42,000 / year", "CSE (AI/ML)": "₹42,000 / year", "ECE": "₹42,000 / year", "EEE": "₹42,000 / year", "Other branches": "₹42,000 / year" },
+    highest: "₹8.0 LPA", average: "₹3.00 LPA",
+  },
+
+  SDES: {
+    name: "Sree Dattha Institute of Engineering & Science",
+    code: "SDES",
+    website: "https://sreedattha.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-8414-202206", email: "admissions@sreedattha.ac.in" },
+    fees: { "CSE": "₹85,000 / year", "CSE (AI/ML)": "₹85,000 / year", "ECE": "₹85,000 / year", "EEE": "₹85,000 / year", "Other branches": "₹85,000 / year" },
+    highest: "₹18.0 LPA", average: "₹3.90 LPA",
+  },
+
+  SDEW: {
+    name: "Sridevi Womens Engineering College",
+    code: "SDEW",
+    website: "https://srideviengg.com/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-40-23145455", email: "principal@srideviengg.com" },
+    fees: { "CSE": "₹95,000 / year", "CSE (AI/ML)": "₹95,000 / year", "ECE": "₹95,000 / year", "EEE": "₹95,000 / year", "Other branches": "₹95,000 / year" },
+    highest: "₹24.0 LPA", average: "₹4.25 LPA",
+  },
+
+  SDGI: {
+    name: "Sree Dattha Group of Institutions",
+    code: "SDGI",
+    website: "https://sreedattha.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-8414-202206", email: "admissions@sreedattha.ac.in" },
+    fees: { "CSE": "₹75,000 / year", "CSE (AI/ML)": "₹75,000 / year", "ECE": "₹75,000 / year", "EEE": "₹75,000 / year", "Other branches": "₹75,000 / year" },
+    highest: "₹15.5 LPA", average: "₹3.80 LPA",
+  },
+
+  SIEI: {
+    name: "Siddhartha Institute of Engineering & Technology",
+    code: "SIEI",
+    website: "https://siddharthahyd.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9441911441", email: "principal@siddharthahyd.ac.in" },
+    fees: { "CSE": "₹75,000 / year", "CSE (AI/ML)": "₹75,000 / year", "ECE": "₹75,000 / year", "EEE": "₹75,000 / year", "Other branches": "₹75,000 / year" },
+    highest: "₹14.0 LPA", average: "₹3.75 LPA",
+  },
+
+  SISG: {
+    name: "Siddhartha Institute of Technology & Sciences",
+    code: "SISG",
+    website: "https://siddharthasg.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9441911551", email: "info@siddharthasg.ac.in" },
+    fees: { "CSE": "₹68,000 / year", "CSE (AI/ML)": "₹68,000 / year", "ECE": "₹68,000 / year", "EEE": "₹68,000 / year", "Other branches": "₹68,000 / year" },
+    highest: "₹12.5 LPA", average: "₹3.50 LPA",
+  },
+
+  SMED: {
+    name: "St Marys Group of Institutions",
+    code: "SMED",
+    website: "https://stmarysgroup.com/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9666660144", email: "admissions@stmarysgroup.com" },
+    fees: { "CSE": "₹55,000 / year", "CSE (AI/ML)": "₹55,000 / year", "ECE": "₹55,000 / year", "EEE": "₹55,000 / year", "Other branches": "₹55,000 / year" },
+    highest: "₹11.0 LPA", average: "₹3.40 LPA",
+  },
+
+  SMSK: {
+    name: "Samskruthi College of Engineering & Technology",
+    code: "SMSK",
+    website: "https://samskruthi.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9396872493", email: "principal.engineering@samskruthi.ac.in" },
+    fees: { "CSE": "₹68,000 / year", "CSE (AI/ML)": "₹68,000 / year", "ECE": "₹68,000 / year", "EEE": "₹68,000 / year", "Other branches": "₹68,000 / year" },
+    highest: "₹14.0 LPA", average: "₹3.60 LPA",
+  },
+
+  SNIS: {
+    name: "Srinidhi Institute of Science & Technology",
+    code: "SNIS",
+    website: "https://sreenidhi.edu.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9642666662", email: "admissions@sreenidhi.edu.in" },
+    fees: { "CSE": "₹1,37,000 / year", "CSE (AI/ML)": "₹1,37,000 / year", "ECE": "₹1,37,000 / year", "EEE": "₹1,37,000 / year", "Other branches": "₹1,37,000 / year" },
+    highest: "₹52.0 LPA", average: "₹6.10 LPA",
+  },
+
+  SNTI: {
+    name: "Scient Institute of Technology",
+    code: "SNTI",
+    website: "https://scient.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9866114441", email: "principal@scient.ac.in" },
+    fees: { "CSE": "₹68,000 / year", "CSE (AI/ML)": "₹68,000 / year", "ECE": "₹68,000 / year", "EEE": "₹68,000 / year", "Other branches": "₹68,000 / year" },
+    highest: "₹12.0 LPA", average: "₹3.55 LPA",
+  },
+
+  SPEC: {
+    name: "St Peters Engineering College",
+    code: "SPEC",
+    website: "https://stpetershyd.com/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9030044743", email: "admissions@stpetershyd.com" },
+    fees: { "CSE": "₹85,000 / year", "CSE (AI/ML)": "₹85,000 / year", "ECE": "₹85,000 / year", "EEE": "₹85,000 / year", "Other branches": "₹85,000 / year" },
+    highest: "₹16.0 LPA", average: "₹3.85 LPA",
+  },
+
+  SPHN: {
+    name: "Sphoorthy Engineering College",
+    code: "SPHN",
+    website: "https://sphoorthyengg.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9963111841", email: "info@sphoorthyengg.ac.in" },
+    fees: { "CSE": "₹95,000 / year", "CSE (AI/ML)": "₹95,000 / year", "ECE": "₹95,000 / year", "EEE": "₹95,000 / year", "Other branches": "₹95,000 / year" },
+    highest: "₹30.0 LPA", average: "₹4.40 LPA",
+  },
+
+  SRHP: {
+    name: "SR University (SR Engineering College)",
+    code: "SRHP",
+    website: "https://sru.edu.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9849623441", email: "admissions@sru.edu.in" },
+    fees: { "CSE": "₹1,40,000–₹1,65,000 / year", "CSE (AI/ML)": "₹1,40,000–₹1,65,000 / year", "ECE": "₹90,000–₹1,10,000 / year", "EEE": "₹90,000–₹1,10,000 / year", "Other branches": "₹90,000–₹1,10,000 / year" },
+    highest: "₹34.4 LPA", average: "₹5.20 LPA",
+  },
+
+  SRIW: {
+    name: "Sumathi Reddy Institute of Technology for Women",
+    code: "SRIW",
+    website: "https://sritw.org/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9849623442", email: "principal@sritw.org" },
+    fees: { "CSE": "₹75,000 / year", "CSE (AI/ML)": "₹75,000 / year", "ECE": "₹75,000 / year", "EEE": "₹75,000 / year", "Other branches": "₹75,000 / year" },
+    highest: "₹16.0 LPA", average: "₹4.00 LPA",
+  },
+
+  SRYS: {
+    name: "Sreyas Institute of Engineering and Technology",
+    code: "SRYS",
+    website: "https://sreyas.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9959655755", email: "info@sreyas.ac.in" },
+    fees: { "CSE": "₹1,00,000 / year", "CSE (AI/ML)": "₹1,00,000 / year", "ECE": "₹1,00,000 / year", "EEE": "₹1,00,000 / year", "Other branches": "₹1,00,000 / year" },
+    highest: "₹24.0 LPA", average: "₹4.50 LPA",
+  },
+
+  STLW: {
+    name: "Stanley College of Engineering and Technology for Women",
+    code: "STLW",
+    website: "https://stanley.edu.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-40-23234892", email: "admissions@stanley.edu.in" },
+    fees: { "CSE": "₹1,05,000 / year", "CSE (AI/ML)": "₹1,05,000 / year", "ECE": "₹1,05,000 / year", "EEE": "₹1,05,000 / year", "Other branches": "₹1,05,000 / year" },
+    highest: "₹31.5 LPA", average: "₹4.80 LPA",
+  },
+
+  SUCE: {
+    name: "University College of Engineering, Satavahana University",
+    code: "SUCE",
+    website: "https://satavahana.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-8721-255552", email: "satavahanauce@gmail.com" },
+    fees: { "CSE": "₹45,000 / year", "CSE (AI/ML)": "₹45,000 / year", "ECE": "₹45,000 / year", "EEE": "₹45,000 / year", "Other branches": "₹45,000 / year" },
+    highest: "₹10.0 LPA", average: "₹3.50 LPA",
+  },
+
+  SVES: {
+    name: "Sri Venkateswara Engineering College",
+    code: "SVES",
+    website: "https://sves.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9848386341", email: "sves_srp@yahoo.co.in" },
+    fees: { "CSE": "₹45,000 / year", "CSE (AI/ML)": "₹45,000 / year", "ECE": "₹45,000 / year", "EEE": "₹45,000 / year", "Other branches": "₹45,000 / year" },
+    highest: "₹7.5 LPA", average: "₹3.00 LPA",
+  },
+
+  SVIT: {
+    name: "Swami Vivekananda Institute of Technology",
+    code: "SVIT",
+    website: "https://svit.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-40-27712256", email: "principal@svit.ac.in" },
+    fees: { "CSE": "₹75,000 / year", "CSE (AI/ML)": "₹75,000 / year", "ECE": "₹75,000 / year", "EEE": "₹75,000 / year", "Other branches": "₹75,000 / year" },
+    highest: "₹14.0 LPA", average: "₹3.75 LPA",
+  },
+
+  SVSE: {
+    name: "SVS Institute of Technology",
+    code: "SVSE",
+    website: "https://svsit.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9849156322", email: "principal@svsit.ac.in" },
+    fees: { "CSE": "₹65,000 / year", "CSE (AI/ML)": "₹65,000 / year", "ECE": "₹65,000 / year", "EEE": "₹65,000 / year", "Other branches": "₹65,000 / year" },
+    highest: "₹11.0 LPA", average: "₹3.40 LPA",
+  },
+
+  SWET: {
+    name: "Shadan Womens College of Engineering & Technology",
+    code: "SWET",
+    website: "https://swcet.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9848135812", email: "swcet_shadan@yahoo.co.in" },
+    fees: { "CSE": "₹72,000 / year", "CSE (AI/ML)": "₹72,000 / year", "ECE": "₹72,000 / year", "EEE": "₹72,000 / year", "Other branches": "₹72,000 / year" },
+    highest: "₹12.5 LPA", average: "₹3.60 LPA",
+  },
+
+  TCEK: {
+    name: "Trinity College of Engineering & Technology, Peddapally",
+    code: "TCEK",
+    website: "https://trinitywgl.com/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9849354091", email: "trinity.pdpl@gmail.com" },
+    fees: { "CSE": "₹43,000 / year", "CSE (AI/ML)": "₹43,000 / year", "ECE": "₹43,000 / year", "EEE": "₹43,000 / year", "Other branches": "₹43,000 / year" },
+    highest: "₹7.0 LPA", average: "₹2.90 LPA",
+  },
+
+  TCTK: {
+    name: "Trinity College of Engineering & Technology, Karimnagar",
+    code: "TCTK",
+    website: "https://trinityengg.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9849202512", email: "trinitykmr@gmail.com" },
+    fees: { "CSE": "₹55,000 / year", "CSE (AI/ML)": "₹55,000 / year", "ECE": "₹55,000 / year", "EEE": "₹55,000 / year", "Other branches": "₹55,000 / year" },
+    highest: "₹9.5 LPA", average: "₹3.20 LPA",
+  },
+
+  TKEM: {
+    name: "Teegala Krishna Reddy Engineering College",
+    code: "TKEM",
+    website: "https://tkrec.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-8498060010", email: "info@tkrec.ac.in" },
+    fees: { "CSE": "₹85,000 / year", "CSE (AI/ML)": "₹85,000 / year", "ECE": "₹85,000 / year", "EEE": "₹85,000 / year", "Other branches": "₹85,000 / year" },
+    highest: "₹21.0 LPA", average: "₹4.10 LPA",
+  },
+
+  TKRC: {
+    name: "T K R College of Engineering and Technology",
+    code: "TKRC",
+    website: "https://tkrcet.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-8498060001", email: "info@tkrcet.ac.in" },
+    fees: { "CSE": "₹90,000 / year", "CSE (AI/ML)": "₹90,000 / year", "ECE": "₹90,000 / year", "EEE": "₹90,000 / year", "Other branches": "₹90,000 / year" },
+    highest: "₹24.0 LPA", average: "₹4.30 LPA",
+  },
+
+  TPCE: {
+    name: "Talla Padmavathi College of Engineering",
+    code: "TPCE",
+    website: "https://tallapadmavathi.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9849495115", email: "tpce.wgl@gmail.com" },
+    fees: { "CSE": "₹68,000 / year", "CSE (AI/ML)": "₹68,000 / year", "ECE": "₹68,000 / year", "EEE": "₹68,000 / year", "Other branches": "₹68,000 / year" },
+    highest: "₹12.0 LPA", average: "₹3.50 LPA",
+  },
+
+  TRRM: {
+    name: "TRR College of Technology",
+    code: "TRRM",
+    website: "https://trrgroup.edu.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9848562341", email: "trrct@yahoo.com" },
+    fees: { "CSE": "₹40,000 / year", "CSE (AI/ML)": "₹40,000 / year", "ECE": "₹40,000 / year", "EEE": "₹40,000 / year", "Other branches": "₹40,000 / year" },
+    highest: "₹6.5 LPA", average: "₹2.80 LPA",
+  },
+
+  TUCE: {
+    name: "University College of Engineering, Telangana University",
+    code: "TUCE",
+    website: "https://telanganauniversity.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-8461-222220", email: "tuce.nzb@gmail.com" },
+    fees: { "CSE": "₹45,000 / year", "CSE (AI/ML)": "₹45,000 / year", "ECE": "₹45,000 / year", "EEE": "₹45,000 / year", "Other branches": "₹45,000 / year" },
+    highest: "₹11.5 LPA", average: "₹3.80 LPA",
+  },
+
+  VAGE: {
+    name: "Vaagdevi College of Engineering",
+    code: "VAGE",
+    website: "https://vaagdevi.edu.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9849746969", email: "admissions@vaagdevi.edu.in" },
+    fees: { "CSE": "₹1,05,000 / year", "CSE (AI/ML)": "₹1,05,000 / year", "ECE": "₹1,05,000 / year", "EEE": "₹1,05,000 / year", "Other branches": "₹1,05,000 / year" },
+    highest: "₹28.0 LPA", average: "₹4.85 LPA",
+  },
+
+  VASV: {
+    name: "Vasavi College of Engineering",
+    code: "VASV",
+    website: "https://vce.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-40-23146003", email: "admissions@vce.ac.in" },
+    fees: { "CSE": "₹1,40,000–₹1,60,000 / year", "CSE (AI/ML)": "₹1,40,000–₹1,60,000 / year", "ECE": "₹1,40,000–₹1,60,000 / year", "EEE": "₹1,40,000–₹1,60,000 / year", "Other branches": "₹1,40,000–₹1,60,000 / year" },
+    highest: "₹51.0 LPA", average: "₹7.10 LPA",
+  },
+
+  VBIT: {
+    name: "Vignan Bharati Institute of Technology",
+    code: "VBIT",
+    website: "https://vbit.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9652903842", email: "info@vbit.ac.in" },
+    fees: { "CSE": "₹1,00,000 / year", "CSE (AI/ML)": "₹1,00,000 / year", "ECE": "₹1,00,000 / year", "EEE": "₹1,00,000 / year", "Other branches": "₹1,00,000 / year" },
+    highest: "₹29.0 LPA", average: "₹4.60 LPA",
+  },
+
+  VCET: {
+    name: "Visweswaraya College of Engineering & Technology",
+    code: "VCET",
+    website: "https://vcethyd.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9246112233", email: "vcet.principal@gmail.com" },
+    fees: { "CSE": "₹55,000 / year", "CSE (AI/ML)": "₹55,000 / year", "ECE": "₹55,000 / year", "EEE": "₹55,000 / year", "Other branches": "₹55,000 / year" },
+    highest: "₹9.0 LPA", average: "₹3.15 LPA",
+  },
+
+  VGNT: {
+    name: "Vignan Institute of Technology and Science",
+    code: "VGNT",
+    website: "https://vignanits.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9866399664", email: "vignanits.admissions@gmail.com" },
+    fees: { "CSE": "₹1,05,000 / year", "CSE (AI/ML)": "₹1,05,000 / year", "ECE": "₹1,05,000 / year", "EEE": "₹1,05,000 / year", "Other branches": "₹1,05,000 / year" },
+    highest: "₹36.5 LPA", average: "₹4.90 LPA",
+  },
+
+  VGSE: {
+    name: "Vaageshwari College of Engineering",
+    code: "VGSE",
+    website: "https://vhca.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9502588612", email: "principal.vaageshwari@gmail.com" },
+    fees: { "CSE": "₹73,000 / year", "CSE (AI/ML)": "₹73,000 / year", "ECE": "₹73,000 / year", "EEE": "₹73,000 / year", "Other branches": "₹73,000 / year" },
+    highest: "₹14.0 LPA", average: "₹3.65 LPA",
+  },
+
+  VGWL: {
+    name: "Vagdevi Engineering College",
+    code: "VGWL",
+    website: "https://vaagdevi.edu.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9849746969", email: "admissions@vaagdevi.edu.in" },
+    fees: { "CSE": "₹70,000 / year", "CSE (AI/ML)": "₹70,000 / year", "ECE": "₹70,000 / year", "EEE": "₹70,000 / year", "Other branches": "₹70,000 / year" },
+    highest: "₹15.0 LPA", average: "₹3.90 LPA",
+  },
+
+  VISA: {
+    name: "Vathsalya Institute of Science & Technology",
+    code: "VISA",
+    website: "https://vathsalya.com/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9848523451", email: "vist.bhongir@gmail.com" },
+    fees: { "CSE": "₹43,000 / year", "CSE (AI/ML)": "₹43,000 / year", "ECE": "₹43,000 / year", "EEE": "₹43,000 / year", "Other branches": "₹43,000 / year" },
+    highest: "₹7.0 LPA", average: "₹2.85 LPA",
+  },
+
+  VITS: {
+    name: "Sri Vishweswaraya Institute of Technology & Science",
+    code: "VITS",
+    website: "https://svits.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9848831441", email: "svits.mbnr@gmail.com" },
+    fees: { "CSE": "₹52,000 / year", "CSE (AI/ML)": "₹52,000 / year", "ECE": "₹52,000 / year", "EEE": "₹52,000 / year", "Other branches": "₹52,000 / year" },
+    highest: "₹9.0 LPA", average: "₹3.10 LPA",
+  },
+
+  VJEC: {
+    name: "VNR Vignana Jyothi Institute of Engineering & Technology",
+    code: "VJEC",
+    website: "https://vnrvjiet.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-40-23042758", email: "admissions@vnrvjiet.in" },
+    fees: { "CSE": "₹1,35,000–₹1,51,000 / year", "CSE (AI/ML)": "₹1,35,000–₹1,51,000 / year", "ECE": "₹1,35,000–₹1,51,000 / year", "EEE": "₹1,35,000–₹1,51,000 / year", "Other branches": "₹1,35,000–₹1,51,000 / year" },
+    highest: "₹52.0 LPA", average: "₹6.40 LPA",
+  },
+
+  VJIT: {
+    name: "Vidya Jyothi Institute of Technology",
+    code: "VJIT",
+    website: "https://vjit.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9849014441", email: "admissions@vjit.ac.in" },
+    fees: { "CSE": "₹1,15,000 / year", "CSE (AI/ML)": "₹1,15,000 / year", "ECE": "₹1,15,000 / year", "EEE": "₹1,15,000 / year", "Other branches": "₹1,15,000 / year" },
+    highest: "₹33.0 LPA", average: "₹4.80 LPA",
+  },
+
+  VMEG: {
+    name: "Vardhaman College of Engineering",
+    code: "VMEG",
+    website: "https://vardhaman.org/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9989961244", email: "admissions@vardhaman.org" },
+    fees: { "CSE": "₹1,25,000–₹1,40,000 / year", "CSE (AI/ML)": "₹1,25,000–₹1,40,000 / year", "ECE": "₹1,25,000–₹1,40,000 / year", "EEE": "₹1,25,000–₹1,40,000 / year", "Other branches": "₹1,25,000–₹1,40,000 / year" },
+    highest: "₹45.0 LPA", average: "₹5.90 LPA",
+  },
+
+  VMTW: {
+    name: "Vignan's Institute of Management & Technology for Women",
+    code: "VMTW",
+    website: "https://vmtw.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9652903843", email: "info@vmtw.in" },
+    fees: { "CSE": "₹80,000 / year", "CSE (AI/ML)": "₹80,000 / year", "ECE": "₹80,000 / year", "EEE": "₹80,000 / year", "Other branches": "₹80,000 / year" },
+    highest: "₹18.0 LPA", average: "₹4.00 LPA",
+  },
+
+  VREC: {
+    name: "Vijaya Rural Engineering College",
+    code: "VREC",
+    website: "https://vrecnzb.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9440026711", email: "vreczb@gmail.com" },
+    fees: { "CSE": "₹50,000 / year", "CSE (AI/ML)": "₹50,000 / year", "ECE": "₹50,000 / year", "EEE": "₹50,000 / year", "Other branches": "₹50,000 / year" },
+    highest: "₹8.5 LPA", average: "₹3.10 LPA",
+  },
+
+  VRKW: {
+    name: "Dr VRK Womens College of Engineering & Technology",
+    code: "VRKW",
+    website: "https://drvrkwomens.church/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9848314441", email: "drvrkengg@gmail.com" },
+    fees: { "CSE": "₹48,000 / year", "CSE (AI/ML)": "₹48,000 / year", "ECE": "₹48,000 / year", "EEE": "₹48,000 / year", "Other branches": "₹48,000 / year" },
+    highest: "₹7.5 LPA", average: "₹2.90 LPA",
+  },
+
+  WESL: {
+    name: "CSI Wesley Institute of Technology and Sciences",
+    code: "WESL",
+    website: "https://wesleyengg.ac.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-40-27812341", email: "csiwesleyengg@gmail.com" },
+    fees: { "CSE": "₹55,000 / year", "CSE (AI/ML)": "₹55,000 / year", "ECE": "₹55,000 / year", "EEE": "₹55,000 / year", "Other branches": "₹55,000 / year" },
+    highest: "₹9.0 LPA", average: "₹3.30 LPA",
+  },
+
+  WITS: {
+    name: "Warangal Institute of Technology Science",
+    code: "WITS",
+    website: "https://witswgl.in/",
+    guide: { name: "Admission Office", branch: "", year: "", phone: "+91-9849245115", email: "witswgl@gmail.com" },
+    fees: { "CSE": "₹46,000 / year", "CSE (AI/ML)": "₹46,000 / year", "ECE": "₹46,000 / year", "EEE": "₹46,000 / year", "Other branches": "₹46,000 / year" },
+    highest: "₹8.0 LPA", average: "₹3.00 LPA",
+  },
 };
 
 export default async function InstituteDetailsPage({ searchParams }: { searchParams: Promise<{ code?: string }> }) {
