@@ -54,8 +54,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               </div>
             </div>
 
-            <div className="mt-10 rounded-2xl border border-[#f4c542]/15 bg-[#f4c542]/[.04] p-5 text-sm leading-6 text-zinc-400">
-              <p className="font-black text-[#f4c542]">⚠️ Independent platform disclaimer</p>
+            <div className="mt-10 rounded-2xl border border-[#f4c542]/15 bg-[#f4c542]/[.04] p-5 text-sm leading-6 text-white">
+              <p className="font-black text-white">⚠️ Independent platform disclaimer</p>
               <p className="mt-1">
                 This website is an independent platform that aggregates and presents publicly available data for educational purposes only. For official, complete, and legally binding information, always refer to the <a href="https://tgeapcet.nic.in/" target="_blank" rel="noreferrer" className="font-bold text-white underline decoration-[#f4c542] underline-offset-4">official TS EAMCET website</a>.
               </p>
