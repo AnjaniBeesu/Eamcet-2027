@@ -62,7 +62,7 @@
 .dark-theme tr:has(.text-pink-300){background-color:rgba(255,182,193,.10)!important}
 .dark-theme tr:has(.text-pink-300):hover{background-color:rgba(255,182,193,.16)!important}
 
-/* Tables: white surfaces throughout light mode, including sticky cells. */
+/* Tables: pure white surfaces throughout light mode, including sticky cells. */
 .light-theme table{color:#2b2118;background:#fff!important}
 .light-theme thead{background:#fff!important}
 .light-theme th{color:#6f6254!important;background:#fff!important}
@@ -72,10 +72,10 @@
 .light-theme tbody tr td{background:#fff!important}
 .light-theme footer{background:#f1e6d0!important}
 
-/* Hero glow is almost invisible in light mode — no brown semicircle. */
-.light-theme [class*="bg-[#f4c542]/[.07]"]{background-color:rgba(107,69,40,.015)!important}
+/* Hero glow is almost invisible in light mode. */
+.light-theme [class*="bg-[#f4c542]/[.07]"]{background-color:rgba(107,69,40,.012)!important}
 
-/* Disclaimer stays pure white for maximum readability in light mode. */
-.light-theme footer div[class*="border-[#f4c542]/15"]{background:#fff!important;border-color:#d8c9ad!important}
+/* Disclaimer: coffee-brown panel with white text in light mode, matching the requested contrast. */
+.light-theme footer div[class*="border-[#f4c542]/15"]{background:#6b4528!important;border-color:#6b4528!important}
 .light-theme footer div[class*="border-[#f4c542]/15"] p{color:#fff!important}
 .light-theme footer div[class*="border-[#f4c542]/15"] a{color:#fff!important}
