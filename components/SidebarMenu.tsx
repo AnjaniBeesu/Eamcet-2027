@@ -11,7 +11,7 @@ export function SidebarMenu() {
     <>
       <button type="button" onClick={() => setOpen(true)} aria-label="Open menu" className="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-white/10 bg-white/5 transition hover:scale-105 hover:bg-white/10"><Menu size={19} /></button>
       {open && (
-        <div className="fixed inset-0 z-[100]">
+        <div className="mobile-menu-overlay fixed inset-0 z-[100]">
           <button aria-label="Close menu" className="mobile-menu-backdrop absolute inset-0" onClick={() => setOpen(false)} />
           <aside className="mobile-menu-drawer absolute right-0 top-0 flex h-full w-[min(360px,88vw)] flex-col border-l border-white/10 bg-[#070707] p-6 shadow-2xl">
             <div className="flex items-center justify-between">
