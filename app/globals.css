@@ -19,7 +19,10 @@
 .overflow-x-auto:has(table)::before{content:"↔  Scroll right to see the complete table";position:absolute;left:0;right:0;top:.45rem;text-align:center;white-space:nowrap;font-size:.75rem;font-weight:800;letter-spacing:.02em;color:#a1a1aa;pointer-events:none;z-index:2}
 .light-theme .overflow-x-auto:has(table)::before{color:#6f6254}
 
-/* Mobile drawer: the area behind it is fully opaque, so nothing underneath shows through. */
-.mobile-menu-backdrop{background:#070707!important;opacity:1!important;backdrop-filter:none!important}
+/* Mobile menu: make the entire overlay opaque, not just the drawer. */
+.mobile-menu-overlay{background:#070707!important;opacity:1!important;isolation:isolate}
+.mobile-menu-backdrop{position:absolute!important;inset:0!important;display:block!important;background:#070707!important;opacity:1!important;backdrop-filter:none!important}
+.mobile-menu-drawer{position:absolute!important;z-index:1;background:#070707!important;opacity:1!important;backdrop-filter:none!important}
+.light-theme .mobile-menu-overlay{background:#f7f0df!important}
 .light-theme .mobile-menu-backdrop{background:#f7f0df!important}
-.mobile-menu-drawer{background:#070707!important;opacity:1!important;backdrop-filter:none!important}.light-theme .mobile-menu-drawer{background:#fffaf0!important}
+.light-theme .mobile-menu-drawer{background:#fffaf0!important}
