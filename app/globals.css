@@ -19,10 +19,15 @@
 .overflow-x-auto:has(table)::before{content:"↔  Scroll right to see the complete table";position:absolute;left:0;right:0;top:.45rem;text-align:center;white-space:nowrap;font-size:.75rem;font-weight:800;letter-spacing:.02em;color:#a1a1aa;pointer-events:none;z-index:2}
 .light-theme .overflow-x-auto:has(table)::before{color:#6f6254}
 
-/* Mobile menu: make the entire overlay opaque, not just the drawer. */
-.mobile-menu-overlay{background:#070707!important;opacity:1!important;isolation:isolate}
-.mobile-menu-backdrop{position:absolute!important;inset:0!important;display:block!important;background:#070707!important;opacity:1!important;backdrop-filter:none!important}
-.mobile-menu-drawer{position:absolute!important;z-index:1;background:#070707!important;opacity:1!important;backdrop-filter:none!important}
-.light-theme .mobile-menu-overlay{background:#f7f0df!important}
-.light-theme .mobile-menu-backdrop{background:#f7f0df!important}
-.light-theme .mobile-menu-drawer{background:#fffaf0!important}
+/* Mobile menu: portal is rendered at body level, so the sheet must define its own viewport geometry. */
+.mobile-menu-overlay{position:fixed!important;inset:0!important;width:100vw!important;height:100dvh!important;z-index:2147483647!important;display:block!important;isolation:isolate!important;background:rgba(0,0,0,.58)!important;opacity:1!important;visibility:visible!important;pointer-events:auto!important}
+.mobile-menu-backdrop{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;display:block!important;background:rgba(0,0,0,.58)!important;opacity:1!important;visibility:visible!important;pointer-events:auto!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+.mobile-menu-drawer{position:absolute!important;top:0!important;right:0!important;width:75vw!important;max-width:430px!important;height:100dvh!important;min-height:100%!important;z-index:2!important;display:flex!important;flex-direction:column!important;overflow-y:auto!important;overflow-x:hidden!important;background:#070707!important;border-left:1px solid rgba(255,255,255,.12)!important;box-shadow:-24px 0 60px rgba(0,0,0,.45)!important;opacity:1!important;visibility:visible!important;pointer-events:auto!important;padding:1.5rem!important}
+.mobile-menu-drawer nav{position:relative!important;z-index:3!important;display:flex!important;visibility:visible!important;opacity:1!important}
+.mobile-menu-drawer .menu-item{position:relative!important;z-index:3!important;color:#a1a1aa!important;background:rgba(255,255,255,.035)!important;border:1px solid rgba(255,255,255,.08)!important;visibility:visible!important;opacity:1!important}
+.mobile-menu-drawer .menu-item:hover{background:rgba(255,255,255,.08)!important;color:#fff!important}
+.light-theme .mobile-menu-overlay{background:rgba(74,52,35,.22)!important}
+.light-theme .mobile-menu-backdrop{background:rgba(74,52,35,.22)!important}
+.light-theme .mobile-menu-drawer{background:#fffaf0!important;border-left-color:rgba(107,69,40,.18)!important;box-shadow:-24px 0 60px rgba(107,69,40,.18)!important}
+.light-theme .mobile-menu-drawer .menu-item{color:#6f6254!important;background:rgba(107,69,40,.045)!important;border-color:rgba(107,69,40,.14)!important}
+.light-theme .mobile-menu-drawer .menu-item:hover{background:rgba(107,69,40,.09)!important;color:#2b2118!important}
