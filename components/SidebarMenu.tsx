@@ -20,7 +20,7 @@ export function SidebarMenu() {
           <button type="button" onClick={() => setOpen(false)} aria-label="Close menu" className="grid h-9 w-9 place-items-center rounded-full border border-white/10 bg-white/5 transition hover:bg-white/10"><X size={19} /></button>
         </div>
         <nav className="mt-8 flex flex-col gap-2">
-          <Link href="/college-ranking" onClick={() => setOpen(false)} className="group rounded-2xl border border-[#f4c542]/20 bg-[#f4c542]/[.07] p-4 transition hover:bg-[#f4c542]/[.12]"><div className="flex items-center gap-3"><span className="grid h-10 w-10 place-items-center rounded-xl bg-[#f4c542] text-black"><Trophy size={19} /></span><div><p className="font-black">College Crowd Ranking</p><p className="mt-0.5 text-xs text-zinc-500">CSE Phase 1 OC-Boys benchmark</p></div></div></Link>
+          <Link href="/college-ranking" onClick={() => setOpen(false)} className="menu-item"><Trophy size={18} />College Crowd Ranking</Link>
           <Link href="/institute-profile" onClick={() => setOpen(false)} className="menu-item"><Building2 size={18} />Institute Profile</Link>
           <Link href="/college-predictor" onClick={() => setOpen(false)} className="menu-item"><SearchCheck size={18} />College Predictor</Link>
           <Link href="/results" onClick={() => setOpen(false)} className="menu-item"><BarChart3 size={18} />Results</Link>
@@ -29,7 +29,6 @@ export function SidebarMenu() {
           <Link href="/hostel-availability" onClick={() => setOpen(false)} className="menu-item"><BedDouble size={18} />Hostel Availability</Link>
           <Link href="/size-accreditation" onClick={() => setOpen(false)} className="menu-item"><Landmark size={18} />Size &amp; Accreditation</Link>
         </nav>
-        <div className="mt-auto rounded-2xl border border-white/8 bg-white/[.03] p-4 text-xs leading-5 text-zinc-500"><p className="font-bold text-zinc-300">Quick note</p><p className="mt-1">The crowd ranking is a benchmark, not an official government ranking.</p></div>
       </aside>
     </div>
   ) : null;
