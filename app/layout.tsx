@@ -13,6 +13,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-adsense-account" content="ca-pub-2947456082690864" />
+      </head>
       <body className="noise antialiased">
         <Navbar />
         {children}
