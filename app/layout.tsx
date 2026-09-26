@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -17,6 +18,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         {children}
         <Analytics />
         <SpeedInsights />
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2947456082690864"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
         <footer className="border-t border-white/8 bg-[#070707]">
           <div className="mx-auto max-w-7xl px-5 py-14 lg:px-8">
             <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr_1fr]">
